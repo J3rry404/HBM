@@ -1,0 +1,271 @@
+<html>
+
+ <head></head> 
+
+ <body>
+
+   doctype html&gt; 
+
+  <meta charset="UTF-8"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <title>Feliz Cumplé!</title> 
+
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&amp;display=swap" rel="stylesheet"> 
+
+  <script> 
+
+function abrir(){
+
+  
+
+  var obj=document.getElementById("a");
+
+  obj.play()
+
+  document.getElementById("cosmic-Balloons").style="display:none";
+
+  document.getElementById("loaded").style="display:none";
+
+  /*So button disappears but loaded(background) doesn't*/
+
+  /*Preventing the content from appearing*/
+
+}  
+
+  </script> 
+
+  <style>
+
+    
+
+body{
+
+  margin:0;
+
+  font-family: 'Pangolin', cursive;
+
+  background-color:#000;
+
+}
+
+#loaded{
+
+  height:160vh;
+
+  width:160vw;
+
+  /* the top is used as a cover for the other side
+
+  vh & vw are for the device w/h
+
+  so it will fit*/
+
+  position:absolute;
+
+  z-index:4;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  background:#000;
+
+  
+
+}
+
+#button{
+
+  color:#fff;
+
+  font-size:12px;
+
+  background:purple;
+
+  border:none;
+
+  outline:none;
+
+  border-radius:3px;
+
+  position:absolute;
+
+  transform:translate(0, 110px);
+
+  font-family: 'Pangolin', cursive;
+
+  z-index:6;//3
+
+  
+
+}
+
+#message{
+
+  font-size:18px;
+
+  font-wieght:light;
+
+  letter-spacing:2px;
+
+  line-height:2;
+
+  text-align:center;
+
+  background-color:whitesmoke;
+
+  box-shadow:3px 3px 1px 1px #B47950;
+
+  color:#B47950;
+
+  width:270px;
+
+  height:400px;
+
+  position:relative;
+
+  z-index:2;
+
+  
+
+  
+
+}
+
+#cosmic-Balloons{
+
+  width:auto;
+
+  height:230px;
+
+  transform:translate(0, 0px);
+
+  border-radius:5px;
+
+  background:#bbb;
+
+  color:#000;  
+
+  z-index:5;//2
+
+  //why z-index?
+
+  //A: positioning elements on screen via Z coordinate
+
+  position:absolute;
+
+  
+
+}
+
+#knittsHeart{
+
+  width:270px;
+
+  height:250px;
+
+  position:relative;
+
+  z-index:1;
+
+  box-shadow:3px 3px 1px 1px #B47950;
+
+  
+
+}
+
+#teddyRoose{
+
+  width:270px;
+
+  height:250px;
+
+  position:relative;
+
+  //display:inline;
+
+  z-index:1;
+
+  box-shadow:3px 3px 1px 1px #B47950;
+
+}
+
+.end-words{
+
+font-weight:bold;
+
+font-size:20px;
+
+z-index:7;
+
+display:inline;
+
+}
+
+.end-words:hover{
+
+  color:purple;
+
+} 
+
+</style> 
+
+  <div id="loaded"> 
+
+   <img src="https://dl.dropbox.com/s/u28aeojqpu3df14/PSX_20201017_224804.jpg?dl=0 " alt="5 cosmic balloons " id="cosmic-Balloons"> 
+
+   <button onclick="abrir()" id="button">Abrir</button> 
+
+  </div> 
+
+  <center> 
+
+   <img src="https://dl.dropbox.com/s/ktz937cnv5s7s1z/rocknwool-jGXBpAKGkfI-unsplash.jpg?dl=0" alt="Knits Heart Image" id="knittsHeart"> 
+
+   <div id="message"> 
+
+    <span> Hola Ma,</span> 
+
+    <br> 
+
+    <br> Se que es un poco tarde, pero...... 
+
+    <br>Gracias por ser mi mama. 
+
+    <br>Gracias por siempre cursar de mi Y ayudar me quando lo necesito. 
+
+    <br>Gracias por cosinar todas esas comidas deliciosas. 
+
+    <br> Gracias por limpiar a pesar de tus dolores. 
+
+    <br> Gracias por todo lo que has hecho asta hoy. 
+
+    <br> 
+
+    <span class="end-words">Te amo mama.</span> 
+
+    <br> Y 
+
+    <span class="end-words">Feliz Cumple!!!</span> 
+
+    <br> 
+
+   </div> 
+
+   <img id="teddyRoose" src="https://dl.dropbox.com/s/v771oxjmkf13y2k/oxana-lyashenko-FtNM2H1RXZ8-unsplash.jpg?dl=0" alt="bear"> 
+
+  </center> 
+
+  <audio controls loop style="display:none;" id="a"> 
+
+   <source src="https://dl.dropbox.com/s/nxsk3yqw1rdjzw9/Best%20Happy%20Birthday%20To%20You%20%7C%20Happy%20Birthday%20Songs%202020.mp3?dl=0"> 
+
+  </audio> 
+
+ </body>
+
+</html>
